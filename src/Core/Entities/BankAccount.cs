@@ -77,6 +77,8 @@ public class BankAccount
     return report.ToString();
   }
 
+  public virtual void PerformMonthEndTransactions() { }
+
   public BankAccount(string name, decimal initialBalance)
   {
     Number = s_accountNumberSeed.ToString();
